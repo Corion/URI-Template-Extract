@@ -106,3 +106,15 @@ https://www1.example.com/
 https://{name}.test.example.com/
 --- parameters
 null
+===
+--- name
+OpenAPI Server spec - port values
+--- url
+https://test.server.com:8443/v1/foo
+--- template
+https://{username}.server.com:{port}/{version}
+--- parameters
+port: 8443
+version: v1
+username: test
+extra_path: "/foo"
